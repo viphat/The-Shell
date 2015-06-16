@@ -1,15 +1,25 @@
-# The Shell
+# The Shell (Plus) Theme
 
-Simple theme for [Ghost](http://github.com/tryghost/ghost/).
+Forked dựa trên The Shell Theme for [Ghost](http://github.com/tryghost/ghost/) Blogging Platform.
 
 * Pure CSS
 * Web Safe fonts
+* Remove Google Analytics + Disqus (Bởi vì mình không dùng)
+* Add Social Icon - FontAwesome (Thêm vào Footer để link tới Profile Social)
+* Thay Highlighter Prettify.js bằng highlightjs.org (Vì highlightjs có hỗ trợ Language Auto Detect)
+* Sửa lại CSS của Table trong Bài viết
 
-* Added Google Analytics, Disqus and syntax highlighting support by [@AlphaCluster](https://github.com/AlphaCluster) - version without this features available in 'Shell_0.1' branch
+**Screenshot**
 
+![Header](http://i.imgur.com/emcFzHM.png)
 
+![Footer](http://i.imgur.com/B7QELla.png)
 
-You can find live example [here](http://ghostintheshell.ghost.io/).
+**Upcoming**:
+
+* Thêm Menu Navigation giống Theme Abc
+
+You can find live example [here](http://notes.viphat.work/).
 
 
 
