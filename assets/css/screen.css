@@ -596,7 +596,7 @@ button, input, select, textarea {
     border-top: #424650 1px solid;
 }
 
-.post-footer h4 {
+.post-footer h3 {
     font-size: 1.8rem;
     margin: 0;
 }
@@ -829,10 +829,59 @@ button, input, select, textarea {
 }
 
 
+#toc {
+  display: none;
+  top: 0px;
+  left: 0px;
+  word-spacing: -3px;
+  height: 100%;
+  position: fixed;
+  background: #2b303b;
+  font-size: 12px;
+  box-shadow: inset -5px 0 5px 0px #B2B6BD;
+  width: 250px;
+  padding-top: 20px;
+  color: #fff;
+}
+
+#toc ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#toc li {
+  padding: 5px 10px;
+}
+
+#toc a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+}
+
+#toc .h4, #toc .h2 {
+  padding-left: 5px;
+}
+
+#toc .h5, #toc .h3 {
+  padding-left: 20px;
+}
+
+#toc .toc-active {
+  background: #336699;
+  box-shadow: inset -5px 0px 10px -5px #fff;
+}
+
+
 /* ==========================================================================
    9. Media Queries - Smaller than 900px
    ========================================================================== */
-
+@media only screen and (min-width: 1280px) {
+  #toc {
+    display: initial;
+  }
+}
 @media only screen and (max-width: 900px) {
 
     blockquote {

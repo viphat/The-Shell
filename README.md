@@ -18,8 +18,6 @@ Forked dựa trên The Shell Theme for [Ghost](http://github.com/tryghost/ghost/
 **Upcoming**:
 
 * Thêm Menu Navigation giống Theme Abc
+* Table Of Content for Post Item
 
 You can find live example [here](http://notes.viphat.work/).
-
-
-

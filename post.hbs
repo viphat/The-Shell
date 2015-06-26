@@ -4,7 +4,7 @@
     the {body} of the default.hbs template, which contains our header/footer. }}
 
 <main class="content" role="main">
-
+    <div id="toc"></div>
     <article class="{{post_class}}">
 
         {{! Each post has the blog logo at the top, with a link back to the home page }}
@@ -34,13 +34,13 @@
 
             {{#if author}}
                 <section class="author">
-                    <h4>{{author.name}}</h4>
+                    <h3>{{author.name}}</h3>
                     <p>{{author.bio}}</p>
                 </section>
             {{/if}}
 
             <section class="share">
-                <h4>Share this</h4>
+                <h3>Share this</h3>
                 <a class="icon-twitter" href="http://twitter.com/share?text={{title}}&url={{url absolute="true"}}"
                     onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
                     <span class="hidden">Twitter</span>
