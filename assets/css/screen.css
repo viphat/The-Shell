@@ -577,7 +577,7 @@ button, input, select, textarea {
 
 /* Insert some mad padding up in the header for better spacing */
 .post-template .post-header {
-    padding: 75px 0;
+    padding: 60px 0;
 }
 .post-header #blog-logo:before {
     margin: 60px auto;
