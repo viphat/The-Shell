@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" />
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/styles/monokai_sublime.min.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jqcloud/1.0.4/jqcloud.css">
 
     {{! Ghost outputs important style and meta data with this tag }}
@@ -46,6 +47,10 @@
              <section class="poweredby">Proudly published with <a class="icon-ghost" href="http://ghost.org">Ghost</a> in <a href="https://github.com/viphat/The-Shell">The Shell</a> theme.</section>
         </div>
     </footer>
+
+    {{#if @blog.navigation}}
+        {{navigation}}
+    {{/if}}
 
     {{!Ghost outputs important scripts and data with this tag }}
     {{ghost_foot}}

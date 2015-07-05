@@ -577,7 +577,7 @@ button, input, select, textarea {
 
 /* Insert some mad padding up in the header for better spacing */
 .post-template .post-header {
-    padding: 60px 0;
+    padding: 75px 0;
 }
 .post-header #blog-logo:before {
     margin: 60px auto;
@@ -1170,3 +1170,141 @@ Copyright (c) 2012 Dan Eden
    End of file. Media queries should be the last thing here. Do not add stuff
    below this point, or it will probably fuck everything up.
    ========================================================================== */
+.main-nav .fa-bars {
+  cursor: pointer;
+  margin-right: rem-calc(30);
+  margin-top: rem-calc(30);
+  font-size: rem-calc(40);
+}
+
+.main-nav .fa-bars.element-dark {
+  color: #000;
+}
+
+.main-nav .fa-bars.element-light {
+  color: #ffffff;
+}
+
+/* main-menu-ovrl style */
+.main-menu-ovrl {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  -webkit-user-select: none;
+  user-select: none;
+  /* main-menu-ovrl closing cross */
+  /* Menu style */
+}
+
+.main-menu-ovrl .main-menu-ovrl-close {
+  font-size: rem-calc(60);
+  text-align: center;
+  position: absolute;
+  right: rem-calc(35);
+  top: rem-calc(35);
+  overflow: hidden;
+  border: none;
+  color: #ffffff;
+  outline: none;
+  z-index: 100;
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.main-menu-ovrl nav {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  height: 60%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.main-menu-ovrl ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: inline-block;
+  height: 100%;
+  position: relative;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.main-menu-ovrl ul li {
+  display: block;
+  height: 20%;
+  height: calc(100% / 5);
+  min-height: rem-calc(54);
+}
+
+.main-menu-ovrl ul li a {
+  font-weight: 300;
+  display: block;
+  color: #ffffff;
+  font-size: rem-calc(54);
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+  font-family: "Source Sans Pro", sans-serif;
+  text-decoration: none;
+}
+
+.main-menu-ovrl ul li a:hover, .main-menu-ovrl ul li a:focus {
+  color: gray;
+}
+
+/* Effects */
+.main-menu-ovrl-hugeinc {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.5s, visibility 0s 0.5s;
+  transition: opacity 0.5s, visibility 0s 0.5s;
+}
+
+.main-menu-ovrl-hugeinc nav {
+  -webkit-perspective: rem-calc(1200);
+  perspective: rem-calc(1200);
+}
+
+.main-menu-ovrl-hugeinc nav ul {
+  opacity: 0.4;
+  -webkit-transform: translateY(-25%) rotateX(35deg);
+  transform: translateY(-25%) rotateX(35deg);
+  -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.main-menu-ovrl-hugeinc.open {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+.main-menu-ovrl-hugeinc.open nav ul {
+  opacity: 1;
+  -webkit-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+}
+
+.main-menu-ovrl-hugeinc.close nav ul {
+  -webkit-transform: translateY(25%) rotateX(-35deg);
+  transform: translateY(25%) rotateX(-35deg);
+}
+
+@media screen and (max-height: 30.5em) {
+  .main-menu-ovrl nav {
+    height: 70%;
+  }
+  .main-menu-ovrl nav li a {
+    font-size: rem-calc(34);
+  }
+  .main-menu-ovrl ul li {
+    min-height: rem-calc(34);
+  }
+}
+
