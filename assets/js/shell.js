@@ -3,6 +3,18 @@ $(function() {
     hljs.highlightBlock(block);
   });
 
+  $.ajax({
+    url: "http://api.viphat.work/tags/",
+    method: 'GET',
+    crossDomain: true,
+    xhrFields: {
+      withCredentials: true
+    }
+  }).done( function(data) {
+    word_array = data.tags
+    $("#tagCloud").jQCloud(word_array);
+  });
+
   if ($('section h4').length > 0) {
     $('#toc').toc({
       container: 'section', //element to find all selectors in
@@ -24,7 +36,10 @@ $(function() {
         shortText = jQuery.trim(text).substring(0,25).split(" ").join(" ") + "...";
         return shortText;
       },
+<<<<<<< HEAD
 
+=======
+>>>>>>> Add Ghost Tags Cloud
       itemClass: function(i, heading, $heading, prefix) { // custom function for item class
         return $heading[0].tagName.toLowerCase();
       }
