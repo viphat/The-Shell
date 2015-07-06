@@ -1308,3 +1308,31 @@ Copyright (c) 2012 Dan Eden
   }
 }
 
+ul.blog-archive {
+    list-style: none;
+    font-size: 30px;
+    font-weight: 500;
+    padding-left: 5px;
+}
+
+ul.blog-archive li {
+    margin-left:5px;
+    margin-bottom:5px;
+}
+
+header .fa-bars {
+    margin-left: -5px !important;
+}
+
+ul.archive-details {
+    font-size:14px;
+    list-style: none;
+    padding-bottom: 10px;
+}
+ul.archive-details li {
+    margin-bottom: 15px;
+}
+
+ul.archive-details a {
+    margin-left: 10px;
+}

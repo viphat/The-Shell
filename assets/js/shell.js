@@ -3,17 +3,37 @@ $(function() {
     hljs.highlightBlock(block);
   });
 
-  $.ajax({
-    url: "http://api.viphat.work/tags/",
-    method: 'GET',
-    crossDomain: true,
-    xhrFields: {
-      withCredentials: true
-    }
-  }).done( function(data) {
-    word_array = data.tags
-    $("#tagCloud").jQCloud(word_array);
-  });
+  if ($("#blogArchive").length > 0) {
+    $.ajax({
+      url: "http://localhost:3000/posts/archive/",
+      method: 'GET',
+      crossDomain: true,
+      xhrFields: {
+        withCredentials: true
+      }
+    }).done( function(data) {
+        var m = data.post_archive;
+        console.log(data);
+        var source   = $("#archive-template").html();
+        var template = Handlebars.compile(source);
+        $('.post-content').html(template(m));
+    });
+  }
+
+  if ($("#tagCloud").length > 0) {
+    $.ajax({
+      url: "http://api.viphat.work/tags/",
+      method: 'GET',
+      crossDomain: true,
+      xhrFields: {
+        withCredentials: true
+      }
+    }).done( function(data) {
+      word_array = data.tags
+      $("#tagCloud").jQCloud(word_array);
+    });
+  }
+
 
   if ($('section h4').length > 0) {
     $('#toc').toc({

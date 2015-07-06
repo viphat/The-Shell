@@ -2,13 +2,15 @@
 
 Forked dựa trên The Shell Theme for [Ghost](http://github.com/tryghost/ghost/) Blogging Platform.
 
-* Pure CSS
-* Web Safe fonts
-* Remove Google Analytics + Disqus (Bởi vì mình không dùng)
-* Add Social Icon - FontAwesome (Thêm vào Footer để link tới Profile Social)
-* Thay Highlighter Prettify.js bằng highlightjs.org (Vì highlightjs có hỗ trợ Language Auto Detect)
-* Sửa lại CSS của Table trong Bài viết
-* Tự động thêm Table Of Content (TOC) dựa vào Heading của Bài viết
+* Pure CSS.
+* Sửa lại CSS của Table trong Bài viết.
+* Web Safe fonts.
+* Remove Disqus (Vi mình không dùng).
+* Add Social Icon - FontAwesome (Thêm vào Footer để link tới Profile Social).
+* Thay Code Syntax Highlighter Prettify.js bằng highlightjs.org.
+* Tự động thêm Table Of Content (TOC) dựa vào Heading của Bài viết.
+* Thêm Tag Cloud.
+* Thêm Blog Posts Archive.
 
 **Screenshot**
 
