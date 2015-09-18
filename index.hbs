@@ -24,18 +24,18 @@
 
     {{! Each post will be output using this markup }}
     {{#foreach posts}}
+    {{#if tag.name != "private"}}
+      <article class="{{post_class}}">
+          <header class="post-header">
+              <span class="post-meta"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time> {{#if tags}}on {{tags}}{{/if}}</span>
+              <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
 
-    <article class="{{post_class}}">
-        <header class="post-header">
-            <span class="post-meta"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time> {{#if tags}}on {{tags}}{{/if}}</span>
-            <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
-
-        </header>
-        <section class="post-excerpt">
-            <p>{{excerpt}}&hellip;</p>
-        </section>
-    </article>
-
+          </header>
+          <section class="post-excerpt">
+              <p>{{excerpt}}&hellip;</p>
+          </section>
+      </article>
+      {{/if}}
     {{/foreach}}
 
     {{!! After all the posts, we have the previous/next pagination links }}

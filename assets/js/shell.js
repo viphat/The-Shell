@@ -5,7 +5,7 @@ $(function() {
 
   if ($("#blogArchive").length > 0) {
     $.ajax({
-      url: "http://localhost:3000/posts/archive/",
+      url: "http://api.viphat.work/posts/archive/",
       method: 'GET',
       crossDomain: true,
       xhrFields: {

@@ -582,6 +582,14 @@ button, input, select, textarea {
 .post-header #blog-logo:before {
     margin: 60px auto;
 }
+
+.post-content {
+  text-align: justify;
+}
+
+.post-content code {
+  text-align: left;
+}
 /* Keep large images within the bounds of the post-width */
 .post-content img {
     display: block;
