@@ -24,7 +24,7 @@
 
     {{! Each post will be output using this markup }}
     {{#foreach posts}}
-    {{#if author.name != "private author"}}
+    {{#has author="Duong Vi Phat"}}
       <article class="{{post_class}}">
           <header class="post-header">
               <span class="post-meta"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time> {{#if tags}}on {{tags}}{{/if}}</span>
@@ -35,7 +35,7 @@
               <p>{{excerpt}}&hellip;</p>
           </section>
       </article>
-      {{/if}}
+    {{/has}}
     {{/foreach}}
 
     {{!! After all the posts, we have the previous/next pagination links }}
