@@ -24,7 +24,7 @@
 
     {{! Each post will be output using this markup }}
     {{#foreach posts}}
-    {{#if tag.name != "private"}}
+    {{#if author.name != "private author"}}
       <article class="{{post_class}}">
           <header class="post-header">
               <span class="post-meta"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time> {{#if tags}}on {{tags}}{{/if}}</span>
