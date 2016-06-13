@@ -20,7 +20,7 @@ Forked dựa trên The Shell Theme for [Ghost](http://github.com/tryghost/ghost/
 
 **Upcoming**:
 
-* Thêm Menu Navigation giống Theme Abc
+* ~~Thêm Menu Navigation giống Theme Abc~~ [DONE]
 * Thêm Emoticon cho Blog
 
-You can find live example [here](http://notes.viphat.work/).
+~~You can find live example [here](http://notes.viphat.work/)~~. [DEPRECATED]
